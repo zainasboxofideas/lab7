@@ -1,0 +1,139 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form </title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">Annual Survey Form</h1>
+    <p id="description">Thank you for participating in this survey!
+       Your feedback is valuable and helps us improve our services.
+       Please take a few minutes to fill out the following questions.</p>
+      <fieldset><form id="survey-form">
+      <fieldset><label id="name-label">Name: <input placeholder="Alan Turing"id="name" 
+      type="text" required /></label></fieldset>
+          <fieldset><label  id="email-label">Email: <input  placeholder="xyz@gmail.com" 
+          id="email" type="email" required /></label></fieldset>
+          <fieldset><label id="number-label">Age: <input  placeholder="23" id="number" min="13" max="120"
+     type="number" required /></label></fieldset>  
+     <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" 
+        value="p"  name="account-type" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" 
+        value="d"  name="account-type" class="inline" /> Business</label>
+      </fieldset>
+      <fieldset>
+       <label id="review">How satisfied are you with our products/services?
+          <select id="dropdown" name="review">
+            <option value="">(select one)</option>
+            <option value="1">Very Satisfied</option>
+            <option value="2">Satisfied</option>
+            <option value="3">Neutral</option>
+            <option value="4">Dissatisfied</option>
+            <option value="5">Very Dissatisfied</option>
+          </select>
+        </label>
+        </fieldset> 
+         <fieldset>
+            <legend>What do you value the most about our products/services?</legend>
+<label for="Quality">Quality <input id="Quality" type="checkbox" name="personality" value="Quality" class="inline" checked> </label>
+<label for="Price">Price <input id="Price" type="checkbox" name="personality" value="Price" class="inline"> </label>
+<label for="Customer Service">Customer Service  <input id="Customer Service" type="checkbox" name="personality" value="Customer Service" class="inline"> </label>
+         </fieldset>
+         <fieldset> <label for="bio">Would you be interested in new products/services from us? If yes, what types?
+          <textarea id="bio" name="bio" rows="5" cols="30" placeholder="write your suggestions here...">
+          </textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+  </form>
+  </body>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #e6d7ff;
+  color: #3f1d95;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+ 
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3f1d95;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #ffffff;
+  border: 1px solid #3f1d95;
+  color: #e6d7ff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3f1d95;
+  border-color: white;
+  color: white;
+  min-width: 300px;
+}
+
+.inline{
+  display: inline; 
+}
+
+
+** end of undefined **
+
