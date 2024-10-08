@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  #main {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  #title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+
+  #img-div {
+    margin: 20px 0;
+  }
+  
+  #image {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  #img-caption {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+ 
+  #dates {
+    margin: 20px 0;
+    font-size: 1.1em;
+  }
+  
+  #dates p {
+    margin: 5px 0;
+  }
+  
+  /* Tribute info styling */
+  #tribute-info {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  #tribute-info p {
+    margin-bottom: 15px;
+  }
+  
+  #tribute-info ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  #tribute-info li {
+    margin: 8px 0;
+  }
+  
+  /* Link styling */
+  #tribute-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  #tribute-link:hover {
+    text-decoration: underline;
+  }
+  
