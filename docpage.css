@@ -1,0 +1,89 @@
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+code {
+    background-color: #e9ecef;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    display: block;
+    color: #bbb;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+/* Main Document Styles */
+#main-doc {
+    margin-left: 220px;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section header {
+    font-size: 1.5rem;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+/* Code Block Styles */
+pre {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="docpage.css">
+    <title>C++ Documentation</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <header>C++ Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Syntax">Syntax</a>
+        <a class="nav-link" href="#Basic_Concepts">Basic Concepts</a>
+        <a class="nav-link" href="#Control_Flow">Control Flow</a>
+        <a class="nav-link" href="#Functions">Functions</a>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-doc">
+        <!-- Introduction Section -->
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language.</p>
+            <p>It has imperative, object-oriented, and generic programming features, while also providing low-level memory manipulation.</p>
+        </section>
+
+        <!-- Syntax Section -->
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>The syntax of C++ is similar to C, but it includes object-oriented features.</p>
+            <code>#include &lt;iostream&gt;</code>
+            <code>using namespace std;</code>
+            <p>Example of a basic C++ program:</p>
+            <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Hello, World!";
+    return 0;
+}
+            </code></pre>
+        </section>
+
+        <!-- Basic Concepts Section -->
+        <section class="main-section" id="Basic_Concepts">
+            <header>Basic Concepts</header>
+            <p>C++ has several foundational concepts:</p>
+            <ul>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Operators</li>
+                <li>Control Flow</li>
+                <li>Functions</li>
+                <li>Classes & Objects</li>
+            </ul>
+        </section>
+
+        <!-- Control Flow Section -->
+        <section class="main-section" id="Control_Flow">
+            <header>Control Flow</header>
+            <p>C++ control flow includes conditionals and loops:</p>
+            <ul>
+                <li><code>if</code>, <code>else</code>, and <code>else if</code> statements for conditional branching.</li>
+                <li><code>for</code>, <code>while</code>, and <code>do while</code> loops for iteration.</li>
+            </ul>
+            <p>Example of a for loop:</p>
+            <pre><code>
+for(int i = 0; i < 5; i++) {
+    cout << i << endl;
+}
+            </code></pre>
+        </section>
+
+        <!-- Functions Section -->
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>Functions in C++ are blocks of code designed to perform a specific task.</p>
+            <code>return_type function_name(parameters) { /* function body */ }</code>
+            <p>Example of a function:</p>
+            <pre><code>
+int add(int a, int b) {
+    return a + b;
+}
+            </code></pre>
+        </section>
+
+        <!-- Conclusion Section -->
+        <section class="main-section" id="Conclusion">
+            <header>Conclusion</header>
+            <p>C++ is a versatile language that supports both procedural and object-oriented programming paradigms. Its powerful features make it suitable for systems programming, game development, and more.</p>
+            <p>Further resources are available to explore C++ in greater depth, including official documentation and online courses.</p>
+        </section>
+    </main>
+</body>
+</html>
