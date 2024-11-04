@@ -1,0 +1,154 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+/* Navbar Fixed Position */
+/* Navbar Styling with Increased Height */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    height: 80px; /* Set the desired height here */
+    z-index: 1000;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    padding: 0 20px; /* Optional: Add horizontal padding */
+}
+
+/* Adjust Navbar Link Styling */
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px;
+    line-height: 80px; /* Match the navbar height to center the text */
+    font-size: 1.2em; /* Optional: Increase font size */
+}
+
+/* Welcome section styling */
+#welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Projects section styling */
+  /* Projects section styling */
+ /* Projects section styling */
+#projects {
+    padding: 100px 0; /* Increase padding to make the section taller */
+    background-color: #111; /* Dark background color */
+    color: #fff;
+    text-align: center;
+    min-height: 80vh; /* Ensures the section takes up at least 80% of the viewport height */
+}
+
+#projects h2 {
+    font-size: 2.5em; /* Increase font size for the header */
+    margin-bottom: 30px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increase spacing between project tiles */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+
+.project-tile {
+    width: 300px; /* Fixed width to keep tiles side by side */
+    border-radius: 10px;
+    overflow: hidden; /* Ensures image corners are rounded */
+    text-align: center;
+    background-color: #222; /* Slightly lighter background for the tiles */
+    transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.05); /* Slightly enlarges the tile on hover */
+}
+
+.project-tile img {
+    width: 100%; /* Keeps the image width to match the tile width */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image scales and crops to fit the area */
+    display: block;
+    border-bottom: 2px solid #333; /* Optional border to separate image from header */
+}
+
+
+.project-tile h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: inherit; /* Ensures the link color is inherited */
+}
+
+
+
+/* Contact section styling */
+#contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #0073e6; /* Link color */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    #navbar {
+        font-size: 0.8em;
+    }
+
+    #projects {
+        padding: 20px;
+    }
+}
+/* Example Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .project-gallery {
+        flex-direction: column; /* Stack project tiles on smaller screens */
+        gap: 15px; /* Reduce spacing between tiles */
+    }
+
+    #navbar {
+        font-size: 1em; /* Adjust navbar font size */
+    }
+}
